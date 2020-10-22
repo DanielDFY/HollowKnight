@@ -3,10 +3,10 @@ title: "项目建议书"
 author:
   - 丁凡宇^[Equal Contribution, Fudan University, 16307130246(fyding16@fudan.edu.cn)]
   - 金毅铭^[Equal Contribution, Fudan University, 17302010016(ymjin17@fudan.edu.cn)]
-  - 邓朋
+  - 邓朋^[Equal Contribution, Fudan University, 17302010026(pdeng17@fudan.edu.cn)]
   - 胡宵宵^[Equal Contribution, Fudan University, 17302010077(xxhu17@fudan.edu.cn)]
-  - 俞继涛
-  - 宋怡景
+  - 俞继涛^[Equal Contribution, Fudan University, 17302010024(jtyu17@fudan.edu.cn)]
+  - 宋怡景^[Equal Contribution, Fudan University, 17302010079(yjsong17@fudan.edu.cn)]
 date: "2020年10月14日"
 documentclass: ctexart
 output:
