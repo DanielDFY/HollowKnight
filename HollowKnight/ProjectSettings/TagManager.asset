@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Decoration
+  - AirWall
+  - Background
+  - Platform
+  - HUD
+  - Enemy
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -13,19 +20,19 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - PlayerInvulnerable
+  - Enemy
+  - Platform
+  - Wall
+  - Trap
+  - Switch
+  - Decoration
+  - Background
+  - AirWall
+  - HUD
+  - Trigger
+  - Projectile
   - 
   - 
   - 
@@ -40,4 +47,34 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Backgournd
+    uniqueID: 3660346113
+    locked: 0
+  - name: Decoration
+    uniqueID: 3682124931
+    locked: 0
+  - name: Trap
+    uniqueID: 4067115535
+    locked: 0
+  - name: Floor
+    uniqueID: 339557519
+    locked: 0
+  - name: Wall
+    uniqueID: 2421116463
+    locked: 0
+  - name: Platform
+    uniqueID: 2637361329
+    locked: 0
+  - name: Enemy
+    uniqueID: 3373785651
+    locked: 0
+  - name: Player
+    uniqueID: 3323178645
+    locked: 0
+  - name: Projectile
+    uniqueID: 855498631
+    locked: 0
+  - name: HUD
+    uniqueID: 3143365201
     locked: 0
