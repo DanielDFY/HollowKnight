@@ -8,6 +8,7 @@ public class MovingTrap : Trap
     public float movingSpeed;
     public float movingLimit;
     public float movingOffset;
+    public int movingDirection = 0; // 0 for x, 1 for y
 
     private Vector3 basePosition;
 
@@ -27,7 +28,15 @@ public class MovingTrap : Trap
         if (Math.Abs(newOffset) >= movingLimit)
         {
             movingSpeed = -movingSpeed;
-            basePosition.x += movingOffset;
+
+            if (movingDirection == 0)
+            {
+                basePosition.x += movingOffset;
+            }
+            else
+            {
+                basePosition.y += movingOffset;
+            }
             movingOffset = 0;
         }
         else
@@ -36,7 +45,14 @@ public class MovingTrap : Trap
         }
 
         Vector3 newPosition = basePosition;
-        newPosition.x += movingOffset;
+        if(movingDirection == 0)
+        {
+            newPosition.x += movingOffset;
+        }
+        else
+        {
+            newPosition.y += movingOffset;
+        }
         _transform.position = newPosition;
     }
 
