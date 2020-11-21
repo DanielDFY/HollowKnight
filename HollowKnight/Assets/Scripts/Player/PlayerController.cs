@@ -502,7 +502,7 @@ public class PlayerController : MonoBehaviour
 
             string layerName = LayerMask.LayerToName(obj.layer);
             
-            /*
+           
             if (layerName == "Switch")
             {
                 Switch swithComponent = obj.GetComponent<Switch>();
@@ -519,7 +519,7 @@ public class PlayerController : MonoBehaviour
             {
                 Destroy(obj);
             }
-            */
+            
         }
 
         if (hitRecList.Length > 0)
