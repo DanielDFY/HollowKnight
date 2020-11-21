@@ -11,6 +11,9 @@ TagManager:
   - HUD
   - Enemy
   - Trap
+  - Wall
+  - Trigger
+  - Switch
   layers:
   - Default
   - TransparentFX
