@@ -443,6 +443,8 @@ public class PlayerController : MonoBehaviour
             attackDown();
         else
             attackForward();
+
+        _animator.ResetTrigger("IsJumpFirst");
     }
 
     private void attackUp()

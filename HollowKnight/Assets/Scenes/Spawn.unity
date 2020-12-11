@@ -752,6 +752,10 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 1834807
       objectReference: {fileID: 0}
+    - target: {fileID: 714796350, guid: 3f189b4e844dd4c15bacde99d721494d, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1914131801400352, guid: 3f189b4e844dd4c15bacde99d721494d, type: 3}
       propertyPath: m_Name
       value: Player
