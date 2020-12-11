@@ -502,24 +502,25 @@ public class PlayerController : MonoBehaviour
 
             string layerName = LayerMask.LayerToName(obj.layer);
             
-            /*
+           /*
             if (layerName == "Switch")
             {
                 Switch swithComponent = obj.GetComponent<Switch>();
                 if (swithComponent != null)
                     swithComponent.turnOn();
             } 
-            else if (layerName == "Enemy")
+            else*/ if (layerName == "Enemy")
             {
                 EnemyController enemyController = obj.GetComponent<EnemyController>();
                 if (enemyController != null)
                     enemyController.hurt(1);
-            }
+            }/*
             else if (layerName == "Projectile")
             {
                 Destroy(obj);
             }
             */
+            
         }
 
         if (hitRecList.Length > 0)
