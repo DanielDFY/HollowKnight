@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// TODO：类似，做计时器
 public class HUDLoader : MonoBehaviour
 {
     // Start is called before the first frame update
