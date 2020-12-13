@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// TODO：类似，做计时器
-public class HUDLoader : MonoBehaviour
+public class TimeLoader : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene("HUD", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Time", LoadSceneMode.Additive);
     }
 }
