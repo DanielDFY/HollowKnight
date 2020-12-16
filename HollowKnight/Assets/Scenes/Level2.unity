@@ -5160,12 +5160,12 @@ PrefabInstance:
     - target: {fileID: 3720960542313605643, guid: aa1799629b988461caedcaae1c13d103,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5726292
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3720960542313605643, guid: aa1799629b988461caedcaae1c13d103,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.7649751
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa1799629b988461caedcaae1c13d103, type: 3}
@@ -7703,6 +7703,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8579583909701694945, guid: fb59e30342b87f845808d2bf5890585e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8579583909701694975, guid: fb59e30342b87f845808d2bf5890585e,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -8692,9 +8697,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1567645521}
   - component: {fileID: 1567645520}
-  m_Layer: 16
+  m_Layer: 15
   m_Name: town_layered_0029_08
-  m_TagString: Background
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8735,8 +8740,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -634621183
-  m_SortingLayer: 1
+  m_SortingLayerID: -612842365
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 36b8b09b603d56540a488df4adabf142, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9405,6 +9410,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8579583909701694945, guid: fb59e30342b87f845808d2bf5890585e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8579583909701694975, guid: fb59e30342b87f845808d2bf5890585e,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -9756,6 +9766,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8579583909701694945, guid: fb59e30342b87f845808d2bf5890585e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8579583909701694975, guid: fb59e30342b87f845808d2bf5890585e,
         type: 3}
