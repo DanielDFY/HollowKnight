@@ -22,19 +22,22 @@ public class LoadMenu : MonoBehaviour
     public void clickLevelButton1()
     {
         start="Level1";
+        Load();
     }
 
     public void clickLevelButton2()
     {
         start="Level2";
+        Load();
     }
 
     public void clickLevelButton3()
     {
         start="Level3";
+        Load();
     }
 
-    public void clickLoadButton()
+    public void Load()
     {
         SceneManager.LoadScene(start);
     }
