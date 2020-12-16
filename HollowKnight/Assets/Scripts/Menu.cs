@@ -6,19 +6,23 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
+    string start="Spawn";
+    int level=1;
     public void clickStartButton()
     {
         PlayerPrefs.SetString("Milestone", "Spawn");
-        clickLoadButton();
+        SceneManager.LoadScene(PlayerPrefs.GetString("Milestone"));
     }
 
     public void clickLoadButton()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetString("Milestone"));
+        SceneManager.LoadScene("LoadMenu");
     }
 
     public void clickQuitButton()
     {
         Application.Quit();
     }
+
+
 }
