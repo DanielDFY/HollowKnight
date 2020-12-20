@@ -19,9 +19,15 @@ public class Switch : MonoBehaviour
     {
         _spriteRenderer.sprite = triggered;
 
-        obstacle.GetComponent<Obstacle>().destroy();
+        if(obstacle != null)
+        {
+            obstacle.GetComponent<Obstacle>().destroy();
+        }
 
-        trap.GetComponent<Trap>().trigger();
+        if(trap != null)
+        {
+            trap.GetComponent<Trap>().trigger();
+        }
 
         gameObject.layer = LayerMask.NameToLayer("Decoration");
     }

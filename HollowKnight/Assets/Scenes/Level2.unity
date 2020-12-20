@@ -3453,9 +3453,9 @@ GameObject:
   - component: {fileID: 519086961}
   - component: {fileID: 519086960}
   - component: {fileID: 519086962}
-  m_Layer: 15
+  m_Layer: 13
   m_Name: cd_FG_rock_20 (2)
-  m_TagString: Decoration
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3496,8 +3496,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -612842365
-  m_SortingLayer: 2
+  m_SortingLayerID: -227851761
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8fbf1c7f2b1e34c43b29597aafe9c0d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6912,7 +6912,7 @@ PrefabInstance:
     - target: {fileID: 5452049554591647480, guid: 56a34eafc5c7f3d4b82febe0863c3b72,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.777406
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5452049554591647480, guid: 56a34eafc5c7f3d4b82febe0863c3b72,
         type: 3}
@@ -8068,6 +8068,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 607923119}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1392976137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392976132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968151114525cd541a42d2ead69e2c2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyDelay: 0
 --- !u!1001 &1406450967
 PrefabInstance:
   m_ObjectHideFlags: 0
