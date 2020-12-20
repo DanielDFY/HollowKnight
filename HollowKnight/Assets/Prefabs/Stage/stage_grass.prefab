@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7896479815270022102}
   - component: {fileID: 8140166145232238696}
   m_Layer: 11
-  m_Name: stage
+  m_Name: stage_grass
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
