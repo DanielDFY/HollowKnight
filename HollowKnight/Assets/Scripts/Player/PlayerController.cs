@@ -352,6 +352,8 @@ public class PlayerController : MonoBehaviour
         } 
         else if (jumpLeft == 1)
         {
+            if (!_isGrounded)
+                _animator.SetTrigger("IsAirJump");
             _animator.SetTrigger("IsJumpFirst");
         }
     }

@@ -13,7 +13,7 @@ public class Victory : MonoBehaviour
     private string defaultTime = "99:59:59.999";
     private string[] times;
 
-    public void Awake()
+    public void Start()
     {
         
         times = new string[6];
@@ -52,7 +52,7 @@ public class Victory : MonoBehaviour
         // SceneManager.LoadScene(GlobalController.Instance.nextScene);
 
         // TODO：记得删掉
-        PlayerPrefs.DeleteKey("time");
-        PlayerPrefs.DeleteKey("times");
+        // PlayerPrefs.DeleteKey("time");
+        // PlayerPrefs.DeleteKey("times");
     }
 }

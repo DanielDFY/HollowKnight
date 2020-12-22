@@ -11,11 +11,14 @@ public class NextLevel : MonoBehaviour
     {
         if (collision.collider.gameObject != GlobalController.Instance.player)
             return;
-        /*
-        Text textTime = GameObject.Find("ShowTime").GetComponent<Text>();
-        PlayerPrefs.SetString("time", textTime.text);
-        */
 
+        GameObject showTimeObj = GameObject.Find("ShowTime");
+        if (showTimeObj != null)
+        {
+            Text textTime = showTimeObj.GetComponent<Text>();
+            PlayerPrefs.SetString("time", textTime.text);
+        }
+        
         // TODO：保存当前关卡，重玩的话重新加载
         PlayerPrefs.SetString("level", SceneManager.GetActiveScene().name);
 
@@ -41,6 +44,10 @@ public class NextLevel : MonoBehaviour
         }
 
         // PlayerPrefs.SetString("Milestone", GlobalController.Instance.nextScene);
-        SceneManager.LoadScene("Victory");
+        if (SceneManager.GetActiveScene().name == "Spawn")
+            SceneManager.LoadScene(GlobalController.Instance.nextScene);
+        else
+            SceneManager.LoadScene("Victory");
+
     }
 }
