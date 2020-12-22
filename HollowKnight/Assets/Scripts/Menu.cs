@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    string start="Spawn";
-    int level=1;
     public void clickStartButton()
     {
         PlayerPrefs.SetString("Milestone", "Spawn");

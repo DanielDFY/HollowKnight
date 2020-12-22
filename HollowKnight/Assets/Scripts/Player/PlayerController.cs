@@ -352,6 +352,8 @@ public class PlayerController : MonoBehaviour
         } 
         else if (jumpLeft == 1)
         {
+            if (!_isGrounded)
+                _animator.SetTrigger("IsAirJump");
             _animator.SetTrigger("IsJumpFirst");
         }
     }
@@ -443,6 +445,8 @@ public class PlayerController : MonoBehaviour
             attackDown();
         else
             attackForward();
+
+        _animator.ResetTrigger("IsJumpFirst");
     }
 
     private void attackUp()
@@ -502,7 +506,7 @@ public class PlayerController : MonoBehaviour
 
             string layerName = LayerMask.LayerToName(obj.layer);
             
-            /*
+           
             if (layerName == "Switch")
             {
                 Switch swithComponent = obj.GetComponent<Switch>();
@@ -519,7 +523,7 @@ public class PlayerController : MonoBehaviour
             {
                 Destroy(obj);
             }
-            */
+            
         }
 
         if (hitRecList.Length > 0)
