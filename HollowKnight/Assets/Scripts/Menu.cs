@@ -8,8 +8,8 @@ public class Menu : MonoBehaviour
 {
     public void clickStartButton()
     {
-        PlayerPrefs.SetString("Milestone", "Spawn");
-        SceneManager.LoadScene(PlayerPrefs.GetString("Milestone"));
+        PlayerPrefs.SetString("Level", "Spawn");
+        SceneManager.LoadScene(PlayerPrefs.GetString("Level"));
     }
 
     public void clickLoadButton()
