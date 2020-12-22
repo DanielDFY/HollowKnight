@@ -9,12 +9,20 @@ public class LoadMenu : MonoBehaviour
     string start="Level1";
     static int level;
     public Text[] levelText=new Text[3];
+    int[] levels=new int[3];
     void Awake ()
     {
+        for (int i=1;i<=3;++i){
+            levels[i-1]=1;
+        }
+        if("BossLevel".Equals(PlayerPrefs.GetString("Milestone"))){
+            return;
+        }
         level=stringToIntInPostive(PlayerPrefs.GetString("Milestone").Remove(0,5));
         for (int i=1;i<=3;++i){
             if (level<i) {
                 levelText[i-1].color=new Color(1,0,0,1);
+                levels[i-1]=0;
             }
         }
     }
@@ -22,19 +30,19 @@ public class LoadMenu : MonoBehaviour
     public void clickLevelButton1()
     {
         start="Level1";
-        Load();
+        if(levels[0]==1) Load();
     }
 
     public void clickLevelButton2()
     {
         start="Level2";
-        Load();
+        if(levels[1]==1) Load();
     }
 
     public void clickLevelButton3()
     {
-        start="Level3";
-        Load();
+        start="BossLevel";
+        if(levels[2]==1) Load();
     }
 
     public void Load()
