@@ -15,10 +15,10 @@ public class LoadMenu : MonoBehaviour
         for (int i=1;i<=3;++i){
             levels[i-1]=1;
         }
-        if("BossLevel".Equals(PlayerPrefs.GetString("Level"))){
+        if("BossLevel".Equals(PlayerPrefs.GetString("level"))){
             return;
         }
-        level=stringToIntInPostive(PlayerPrefs.GetString("Level").Remove(0,5));
+        level=stringToIntInPostive(PlayerPrefs.GetString("level").Remove(0,5));
         for (int i=1;i<=3;++i){
             if (level<i) {
                 levelText[i-1].color=new Color(1,0,0,1);
