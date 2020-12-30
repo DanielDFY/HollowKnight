@@ -18,6 +18,18 @@ public class LoadMenu : MonoBehaviour
         if("BossLevel".Equals(PlayerPrefs.GetString("level"))){
             return;
         }
+        if("Spawn".Equals(PlayerPrefs.GetString("level"))){
+            for (int i=1;i<=2;++i){
+                    levelText[i].color=new Color(1,0,0,1);
+                    levels[i]=0;
+            }
+        }
+        if(PlayerPrefs.GetString("level")==null){
+            for (int i=0;i<=2;++i){
+                    levelText[i].color=new Color(1,0,0,1);
+                    levels[i]=0;
+            }
+        }
         level=stringToIntInPostive(PlayerPrefs.GetString("level").Remove(0,5));
         for (int i=1;i<=2;++i){
             if (level<i) {
