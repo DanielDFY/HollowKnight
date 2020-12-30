@@ -501,7 +501,7 @@ public class PlayerController : MonoBehaviour
             GameObject obj = hitRec.collider.gameObject;
 
             string layerName = LayerMask.LayerToName(obj.layer);
-            
+            Debug.Log(layerName);
            /*
             if (layerName == "Switch")
             {
@@ -512,8 +512,15 @@ public class PlayerController : MonoBehaviour
             else*/ if (layerName == "Enemy")
             {
                 EnemyController enemyController = obj.GetComponent<EnemyController>();
-                if (enemyController != null)
+                if (enemyController != null) {
                     enemyController.hurt(1);
+                }
+                else
+                {
+                    Debug.Log(obj);
+                    Move enemy = (Move)obj.GetComponentInParent<Move>();
+                    enemy.hurt(1);
+                };
             }/*
             else if (layerName == "Projectile")
             {
