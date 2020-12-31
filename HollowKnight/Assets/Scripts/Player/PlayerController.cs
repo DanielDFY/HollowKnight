@@ -516,9 +516,16 @@ public class PlayerController : MonoBehaviour
             else if (layerName == "Enemy")
             {
                 EnemyController enemyController = obj.GetComponent<EnemyController>();
-                if (enemyController != null)
+                if (enemyController != null) {
                     enemyController.hurt(1);
-            }
+                }
+                else
+                {
+                    Debug.Log(obj);
+                    Move enemy = (Move)obj.GetComponentInParent<Move>();
+                    enemy.hurt(1);
+                };
+            }/*
             else if (layerName == "Projectile")
             {
                 Destroy(obj);
