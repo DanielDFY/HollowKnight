@@ -134,6 +134,10 @@ public class Move : MonoBehaviour
             isTouch = true;
             if (health > 0)
                 CheckFlightDirection();
+        } else if(other.gameObject.CompareTag("Player"))
+        {
+            PlayerController player = other.collider.GetComponent<PlayerController>();
+            player.hurt(2);
         }
     }
 

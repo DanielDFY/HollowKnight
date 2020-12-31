@@ -251,6 +251,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 7
+--- !u!4 &234957141 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4195380477820900, guid: 3f189b4e844dd4c15bacde99d721494d,
+    type: 3}
+  m_PrefabInstance: {fileID: 648032951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,7 +357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1914131801400352, guid: 3f189b4e844dd4c15bacde99d721494d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4195380477820900, guid: 3f189b4e844dd4c15bacde99d721494d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -718,7 +724,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1326152995
 Transform:
   m_ObjectHideFlags: 0
@@ -1015,6 +1021,6 @@ PrefabInstance:
         type: 3}
       propertyPath: playerPos
       value: 
-      objectReference: {fileID: 1326152995}
+      objectReference: {fileID: 234957141}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24eacbab346e2471bb90e837c7247003, type: 3}
