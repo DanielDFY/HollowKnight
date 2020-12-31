@@ -525,7 +525,7 @@ public class PlayerController : MonoBehaviour
                     Move enemy = (Move)obj.GetComponentInParent<Move>();
                     enemy.hurt(1);
                 };
-            }/*
+            }
             else if (layerName == "Projectile")
             {
                 Destroy(obj);

@@ -129,7 +129,7 @@ public class Move : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         // 判断墙体
-        if (other.gameObject.CompareTag("Wall"))
+        if (other.gameObject.CompareTag("Platform"))
         {
             isTouch = true;
             if (health > 0)
